@@ -1,4 +1,4 @@
 [[redirects]]
 from="/*"
-to="src/pong.html"
+to="pong.html"
 status=200
