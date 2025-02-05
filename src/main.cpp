@@ -104,18 +104,18 @@ CpuPaddle cpu;
 int main() {
   cout << "Starting Game!" << endl;
 
-  const int windowWidth = 1280;
-  const int windowHeight = 800;
+  const int windowWidth = 1980;
+  const int windowHeight = 1080;
 
   InitWindow(windowWidth, windowHeight, "My pong Game!");
-  SetTargetFPS(90);
+  SetTargetFPS(240);
 
   // ball params
   ball.radius = 20;
   ball.x = windowWidth / 2.0;
   ball.y = windowHeight / 2.0;
-  ball.speed_x = 7;
-  ball.speed_y = 7;
+  ball.speed_x = 15;
+  ball.speed_y = 15;
 
   // player params
 
@@ -123,7 +123,7 @@ int main() {
   player.height = 120;
   player.x = windowWidth - player.width - 10;
   player.y = windowHeight / 2.0 - player.height / 2.0;
-  player.speed = 6;
+  player.speed = 13;
 
   // cpu params
 
@@ -131,7 +131,7 @@ int main() {
   cpu.height = 120;
   cpu.x = 10;
   cpu.y = windowHeight / 2.0 - cpu.height / 2.0;
-  cpu.speed = 6;
+  cpu.speed = 12;
 
   while (!WindowShouldClose()) {
     BeginDrawing();
