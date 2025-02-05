@@ -77,13 +77,13 @@ After building, run:
 
 ### **Compile for WebAssembly**
 ```sh
-emcc main.cpp -o pong.html -I<raylib_include_path> -L<raylib_lib_path> -lraylib -s USE_GLFW=3 -s ALLOW_MEMORY_GROWTH=1 -s WASM=1 --shell-file shell.html
+emcc main.cpp -o index.html -I<raylib_include_path> -L<raylib_lib_path> -lraylib -s USE_GLFW=3 -s ALLOW_MEMORY_GROWTH=1 -s WASM=1 --shell-file shell.html
 ```
 
 ### **Run Locally**
 Start a local web server:
 ```sh
-emrun --no_browser --port 8080 pong.html
+emrun --port 8080 index.html
 ```
 Then open `http://localhost:8080` in your browser.
 
